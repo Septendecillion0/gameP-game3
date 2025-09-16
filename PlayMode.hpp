@@ -39,13 +39,13 @@ struct PlayMode : Mode {
 
 	glm::vec3 get_leg_tip_position();
 
-	//music coming from the tip of the leg (as a demonstration):
-	std::shared_ptr< Sound::PlayingSample > leg_tip_loop;
-
-	//car honk sound:
-	std::shared_ptr< Sound::PlayingSample > honk_oneshot;
+	std::shared_ptr< Sound::PlayingSample > margit_loop;
+	std::shared_ptr< Sound::PlayingSample > flush_oneshot;
 	
 	//camera:
 	Scene::Camera *camera = nullptr;
+
+	//margit:
+	Scene::Transform *margit_model = nullptr;
 
 };
